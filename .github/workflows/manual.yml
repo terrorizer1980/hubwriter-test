@@ -30,7 +30,7 @@ jobs:
       run: echo "Hello ${{ github.event.inputs.name }}"
     - name: Shows env vars
       run: env
-    - name: Echo GITHUB_ENV
+    - name: Echo GITHUB_PATH
       run: 
-        echo GITHUB_ENV = $GITHUB_ENV
-        echo env:GITHUB_ENV = $env:GITHUB_ENV
+        echo GITHUB_PATH = $GITHUB_PATH;
+        echo env:GITHUB_PATH = $env:GITHUB_PATH
