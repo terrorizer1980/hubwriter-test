@@ -25,6 +25,6 @@ jobs:
 
     steps:
       - name: condition 1
-        if: "contains($env:GITHUB_ACTOR, 'hubwriter')"
+        if: "contains(${env:GITHUB_ACTOR}, 'hubwriter')"
         run: echo Run script for condition 1
 
