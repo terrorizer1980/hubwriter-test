@@ -28,6 +28,3 @@ jobs:
         if: "contains($env:GITHUB_ACTOR, 'hubwriter')"
         run: echo Run script for condition 1
 
-      - name: condition 2
-        if: ${{ ! contains($env:GITHUB_ACTOR, 'hubwriter') }}
-        run: echo Run script for condition 2
