@@ -32,6 +32,5 @@ jobs:
       run: env
     - name: Echo GITHUB_ACTOR
       run: 
-        echo GITHUB_ACTOR = $GITHUB_ACTOR;
         echo env:GITHUB_ACTOR = $env:GITHUB_ACTOR;
         echo double parens GITHUB_ACTOR = ${{ GITHUB_ACTOR }}
