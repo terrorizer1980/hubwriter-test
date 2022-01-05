@@ -32,5 +32,5 @@ jobs:
       run: env
     - name: Echo GITHUB_REPOSITORY
       run: |
-        echo $env.GITHUB_REPOSITORY
+        echo $env:GITHUB_REPOSITORY
         echo $GITHUB_REPOSITORY
