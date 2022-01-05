@@ -5,7 +5,7 @@ on:
 
 jobs:
 
-ifthen-statement:
+  ifthen-statement:
     runs-on: ubuntu-latest
 
     steps:
