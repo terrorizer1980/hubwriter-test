@@ -31,5 +31,5 @@ jobs:
     - name: Shows env vars
       run: env
     - name: Echo GITHUB_ACTOR
-      run: 
+      run: |
         echo $GITHUB_ACTOR
