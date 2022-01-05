@@ -30,6 +30,7 @@ jobs:
       run: echo "Hello ${{ github.event.inputs.name }}"
     - name: Shows env vars
       run: env
-    - name: Echo GITHUB_ACTOR
+    - name: Echo GITHUB_REPOSITORY
       run: |
-        echo $env.GITHUB_ACTOR
+        echo $env.GITHUB_REPOSITORY
+        echo $GITHUB_REPOSITORY
