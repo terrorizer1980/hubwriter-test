@@ -32,5 +32,7 @@ jobs:
       run: env
     - name: Echo GITHUB_REPOSITORY
       run: |
-        echo $env:GITHUB_REPOSITORY
-        echo $GITHUB_REPOSITORY
+        echo one $env:GITHUB_REPOSITORY
+        echo two $GITHUB_REPOSITORY
+        echo three "${env:GITHUB_REPOSITORY}"
+        echo four "${{ env.GITHUB_REPOSITORY }}"
