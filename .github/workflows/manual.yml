@@ -44,3 +44,15 @@ jobs:
       - name: Else run this step
         if: "!contains(github.repository, '_test')"
         run: echo Run script for the non-test repo $GITHUB_REPOSITORY
+
+  transfer-values-between-steps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set the value
+        id: step_one
+        run: |
+          echo "action_state=yellow" >> $GITHUB_ENV
+      - name: Use the value
+        id: step_two
+        run: |
+          echo "And he was all ${{ env.action_state }}" # This will output 'yellow'
