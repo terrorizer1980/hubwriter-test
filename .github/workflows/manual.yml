@@ -38,9 +38,9 @@ jobs:
   repo-name:
     runs-on: ubuntu-latest
     steps:
-      - name: condition 1
+      - name: Run this step for repos with names containing _test
         if: contains(github.repository, '_test')
         run: echo Run script for the test repo $GITHUB_REPOSITORY
-      - name: condition 2
+      - name: Else run this step
         if: "!contains(github.repository, '_test')"
         run: echo Run script for the non-test repo $GITHUB_REPOSITORY
