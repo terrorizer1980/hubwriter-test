@@ -10,8 +10,8 @@ jobs:
 
     steps:
       - name: print env var
-        run: echo $GITHUB_ACTOR
+        run: echo The actor is $GITHUB_ACTOR
       - name: condition 1
-        if: contains(${{GITHUB_ACTOR}}, 'hubwriter') == false
-        run: echo Run script for condition 1 $GITHUB_ACTOR
+        if: contains(env.GITHUB_ACTOR, 'hubwriter') == false
+        run: echo The actor is not hubwriter, it's $GITHUB_ACTOR
 
