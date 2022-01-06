@@ -42,5 +42,5 @@ jobs:
         if: contains(github.repository, '-test')
         run: echo Run script for the test repo $GITHUB_REPOSITORY
       - name: condition 2
-        if: contains(github.repository, '-test') == false
+        if: "!contains(github.repository, '-test')"
         run: echo Run script for the non-test repo $GITHUB_REPOSITORY
