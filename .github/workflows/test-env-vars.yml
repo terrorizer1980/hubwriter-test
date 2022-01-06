@@ -1,3 +1,5 @@
+name: Dump env var values
+
 on:
   workflow_dispatch:
   
