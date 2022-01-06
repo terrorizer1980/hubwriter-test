@@ -16,4 +16,4 @@ jobs:
       - run: echo 9 ${{ toJSON(contains(github.ref_name, 'main')) }}
       - run: echo 10 ${{ toJSON(contains(github.ref_name, 'main') == false ) }}
       - run: echo 11 ${{ contains(github.ref_name, 'main') == false }}
-      - run: cat ${GITHUB_ENV}
+      - run: cat ${{ github.env }}
