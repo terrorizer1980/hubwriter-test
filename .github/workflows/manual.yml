@@ -13,5 +13,5 @@ jobs:
         run: echo The actor is $GITHUB_ACTOR
       - name: condition 1
         if: contains(env.GITHUB_ACTOR, 'hubwriter') == false
-        run: echo The actor is not hubwriter, it's $GITHUB_ACTOR
+        run: echo The actor is not hubwriter, it is $GITHUB_ACTOR
 
