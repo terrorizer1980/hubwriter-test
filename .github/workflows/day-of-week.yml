@@ -27,3 +27,10 @@ jobs:
       - name: else
         if: ${{ env.DAY_OF_WEEK != 'Mon' }}
         run: echo "Hello $env:FIRST_NAME $env:middle_name $env:Last_Name. It's not Monday!"
+
+  show-env-vars:
+      runs-on: windows-latest
+      
+      steps:
+        - name: "Show env vars"
+          run: env
