@@ -18,4 +18,6 @@ jobs:
           Last_Name: Octocat
       - name: else
         if: ${{ env.DAY_OF_WEEK != 'Mon' }}
-        run: echo "It's not Monday!"
+        run: echo "Hello $FIRST_NAME $middle_name $Last_Name. It's not Monday!"
+        env:
+          FIRST_NAME: Bonus
