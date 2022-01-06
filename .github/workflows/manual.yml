@@ -19,4 +19,18 @@ jobs:
       - name: condition 2
         if: contains(github.repository, env.owner) == false
         run: echo The repo ${{ github.repository }} is NOT owned by ${{ env.OWNER }}.
+      - name: print GITHUB_EVENT_NAME on Ubuntu
+        run: echo On Ubuntu ${{ github.event_name }} and $GITHUB_EVENT_NAME
 
+
+  event-name-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print GITHUB_EVENT_NAME on Ubuntu
+        run: echo On Ubuntu ${{ github.event_name }} and $GITHUB_EVENT_NAME
+        
+  event-name-windows:
+    runs-on: windows-latest
+    steps:
+      - name: print GITHUB_EVENT_NAME on windows
+        run: echo On windows ${{ github.event_name }} and $env:GITHUB_EVENT_NAME
