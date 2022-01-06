@@ -12,6 +12,6 @@ jobs:
       - name: print env var
         run: echo $GITHUB_ACTOR
       - name: condition 1
-        if: false == contains(env.GITHUB_ACTOR, 'hubwriter')
-        run: echo Run script for condition 1
+        if: contains(env.GITHUB_ACTOR, 'hubwriter') == false
+        run: echo Run script for condition 1 $env.GITHUB_ACTOR
 
