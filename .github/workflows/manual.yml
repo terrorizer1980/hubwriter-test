@@ -3,12 +3,13 @@ name: If clause for repo owner
 on:
   workflow_dispatch:
 
+env:
+  OWNER: "hubwriter/"
+
 jobs:
 
   ifthen-statement:
     runs-on: ubuntu-latest
-    env:
-      OWNER: "hubwriter/"
 
     steps:
       - name: print env var
