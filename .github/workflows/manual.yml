@@ -7,13 +7,16 @@ jobs:
 
   ifthen-statement:
     runs-on: ubuntu-latest
-    env: 
-      GITHUB_REF_NAME: $GITHUB_REF_NAME
+    env:
+      OWNER: "hubwriter/"
 
     steps:
       - name: print env var
-        run: echo The actor is $GITHUB_REF_NAME
+        run: echo The owner is $OWNER
       - name: condition 1
-        if: contains(env.GITHUB_REF_NAME, 'master') == false
-        run: echo The ref is not master, it is $GITHUB_REF_NAME
+        if: contains(github.repository, env.owner)
+        run: echo The repo ${{ github.repository }} is owned by ${{ env.OWNER }}.
+      - name: condition 2
+        if: contains(github.repository, env.owner) == false
+        run: echo The repo ${{ github.repository }} is NOT owned by ${{ env.OWNER }}.
 
