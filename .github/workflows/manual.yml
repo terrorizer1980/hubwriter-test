@@ -7,6 +7,8 @@ jobs:
 
   ifthen-statement:
     runs-on: ubuntu-latest
+    env: 
+      GITHUB_REF_NAME: $GITHUB_REF_NAME
 
     steps:
       - name: print env var
