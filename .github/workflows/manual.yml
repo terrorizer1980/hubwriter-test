@@ -51,8 +51,8 @@ jobs:
       - name: Set the value
         id: step_one
         run: |
-          echo "action_state=yellow" >> $GITHUB_ENV
+          echo "OWNER=yellow" >> $GITHUB_ENV
       - name: Use the value
         id: step_two
         run: |
-          echo "And he was all ${{ env.action_state }}" # This will output 'yellow'
+          echo "And he was all ${{ env.OWNER }}" # This will output 'yellow'
