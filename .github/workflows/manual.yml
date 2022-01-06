@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: print env var
+        run: echo $GITHUB_ACTOR
       - name: condition 1
-        if: contains(env.GITHUB_ACTOR, 'hubwriter')
+        if: contains($GITHUB_ACTOR, 'hubwriter')
         run: echo Run script for condition 1
 
