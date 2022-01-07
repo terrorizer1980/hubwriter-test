@@ -1,4 +1,4 @@
-name: Dump env var values
+name: Test env var values
 
 on:
   workflow_dispatch:
