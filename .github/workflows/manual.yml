@@ -67,8 +67,5 @@ jobs:
         run: |
           echo "And he was all ${{ env.OWNER }}" # This will output what????
 
-  dump-env-var-values:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo 1 - $CI
-      - run: echo 2 - ${{ github.ci }}      
+
+      
