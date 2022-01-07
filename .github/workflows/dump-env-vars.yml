@@ -21,8 +21,10 @@ jobs:
       - run: echo 12 - ${{ github.api_url }}    
       - run: echo 13 - $GITHUB_BASE_REF
       - run: echo 14 - ${{ github.base_ref }}    
-      - run: echo 15 - $GITHUB_EVENT_NAME
-      - run: echo 16 - ${{ github.event_name }}    
+      - run: echo 15a - $GITHUB_EVENT
+      - run: echo 16b - ${{ github.event }}    
+      - run: echo 15b - $GITHUB_EVENT_NAME
+      - run: echo 16b - ${{ github.event_name }}    
       - run: echo 17 - $GITHUB_EVENT_PATH
       - run: echo 18 - ${{ github.event_path }}    
       - run: echo 19 - $GITHUB_GRAPHQL_URL
