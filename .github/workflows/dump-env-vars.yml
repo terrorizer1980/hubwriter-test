@@ -47,8 +47,10 @@ jobs:
       - run: echo 36 - ${{ github.repository_owner }}    
       - run: echo 37 - $GITHUB_RUN_ID
       - run: echo 38 - ${{ github.run_id }}    
-      - run: echo 39 - $GITHUB_RUN_NUMBER
-      - run: echo 40 - ${{ github.run_number }}    
+      - run: echo 39a - $GITHUB_RUN_NUMBER
+      - run: echo 40a - ${{ github.run_number }}    
+      - run: echo 39b - $GITHUB_RUN_ATTEMPT
+      - run: echo 40b - ${{ github.run_attempt }}    
       - run: echo 41 - $GITHUB_SERVER_URL
       - run: echo 42 - ${{ github.server_url }}    
       - run: echo 43 - $GITHUB_SHA
