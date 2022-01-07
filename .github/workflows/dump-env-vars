@@ -1,0 +1,18 @@
+name: Dump env var values
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dump-env-var-values:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 1 - $CI
+      - run: echo 2 - ${{ github.ci }}      
+      - run: echo 3 - $GITHUB_ACTION
+      - run: echo 4 - ${{ github.action }}    
+      - run: echo 5 - $GITHUB_ACTIONS
+      - run: echo 6 - ${{ github.actions }}        
+      
+      
+      
