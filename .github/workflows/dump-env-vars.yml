@@ -42,27 +42,29 @@ jobs:
       - run: echo 31 - $GITHUB_REF_TYPE
       - run: echo 32 - ${{ github.ref_type }}    
       - run: echo 33 - $GITHUB_REPOSITORY
-      - run: echo  - ${{ github.repository }}    
-      - run: echo  - $GITHUB_RUN_ID
-      - run: echo  - ${{ github.run_id }}    
-      - run: echo  - $GITHUB_RUN_NUMBER
-      - run: echo  - ${{ github.run_number }}    
-      - run: echo  - $GITHUB_SERVER_URL
-      - run: echo  - ${{ github.server_url }}    
-      - run: echo  - $GITHUB_SHA
-      - run: echo  - ${{ github.sha }}    
-      - run: echo  - $GITHUB_WORKFLOW
-      - run: echo  - ${{ github.workflow }}    
-      - run: echo  - $GITHUB_WORKSPACE
-      - run: echo  - ${{ github.workspace }}    
-      - run: echo  - $RUNNER_ARCH
-      - run: echo  - ${{ runner.arch }}    
-      - run: echo  - $RUNNER_NAME
-      - run: echo  - ${{ runner.name }}    
-      - run: echo  - $RUNNER_OS
-      - run: echo  - ${{ runner.os }}    
-      - run: echo  - $RUNNER_TEMP
-      - run: echo  - ${{ runner.temp }}    
-      - run: echo  - $RUNNER_TOOL_CACHE
-      - run: echo  - ${{ runner.tool_cache }}    
+      - run: echo 34 - ${{ github.repository }}    
+      - run: echo 35 - $GITHUB_REPOSITORY
+      - run: echo 36 - ${{ github.repository }}    
+      - run: echo 37 - $GITHUB_RUN_ID
+      - run: echo 38 - ${{ github.run_id }}    
+      - run: echo 39 - $GITHUB_RUN_NUMBER
+      - run: echo 40 - ${{ github.run_number }}    
+      - run: echo 41 - $GITHUB_SERVER_URL
+      - run: echo 42 - ${{ github.server_url }}    
+      - run: echo 43 - $GITHUB_SHA
+      - run: echo 44 - ${{ github.sha }}    
+      - run: echo 45 - $GITHUB_WORKFLOW
+      - run: echo 46 - ${{ github.workflow }}    
+      - run: echo 47 - $GITHUB_WORKSPACE
+      - run: echo 48 - ${{ github.workspace }}    
+      - run: echo 49 - $RUNNER_ARCH
+      - run: echo 50 - ${{ runner.arch }}    
+      - run: echo 51 - $RUNNER_NAME
+      - run: echo 52 - ${{ runner.name }}    
+      - run: echo 53 - $RUNNER_OS
+      - run: echo 54 - ${{ runner.os }}    
+      - run: echo 55 - $RUNNER_TEMP
+      - run: echo 56 - ${{ runner.temp }}    
+      - run: echo 57 - $RUNNER_TOOL_CACHE
+      - run: echo 58 - ${{ runner.tool_cache }}    
       
