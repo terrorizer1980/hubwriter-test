@@ -8,11 +8,59 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo 1 - $CI
-      - run: echo 2 - ${{ github.ci }}      
+      - run: echo 2 - ${{ ci }}      
       - run: echo 3 - $GITHUB_ACTION
       - run: echo 4 - ${{ github.action }}    
       - run: echo 5 - $GITHUB_ACTIONS
       - run: echo 6 - ${{ github.actions }}        
-      
-      
+      - run: echo 7 - $GITHUB_ACTION_PATH
+      - run: echo 8 - ${{ github.action_path }}    
+      - run: echo 9 - $GITHUB_ACTOR
+      - run: echo 10 - ${{ github.actor }}    
+      - run: echo 11 - $GITHUB_API_URL
+      - run: echo 12 - ${{ github.api_url }}    
+      - run: echo 13 - $GITHUB_BASE_REF
+      - run: echo 14 - ${{ github.base_ref }}    
+      - run: echo 15 - $GITHUB_EVENT_NAME
+      - run: echo 16 - ${{ github.event_name }}    
+      - run: echo 17 - $GITHUB_EVENT_PATH
+      - run: echo 18 - ${{ github.event_path }}    
+      - run: echo 19 - $GITHUB_GRAPHQL_URL
+      - run: echo 20 - ${{ github.graphql_url }}    
+      - run: echo 21 - $GITHUB_HEAD_REF
+      - run: echo 22 - ${{ github.head_ref }}    
+      - run: echo 23 - $GITHUB_JOB
+      - run: echo 24 - ${{ github.job }}    
+      - run: echo 25 - $GITHUB_REF
+      - run: echo 26 - ${{ github.ref }}    
+      - run: echo 27 - $GITHUB_REF_NAME
+      - run: echo 28 - ${{ github.ref_name }}    
+      - run: echo 29 - $GITHUB_REF_PROTECTED
+      - run: echo 30 - ${{ github.ref_protected }}    
+      - run: echo 31 - $GITHUB_REF_TYPE
+      - run: echo 32 - ${{ github.ref_type }}    
+      - run: echo 33 - $GITHUB_REPOSITORY
+      - run: echo  - ${{ github.repository }}    
+      - run: echo  - $GITHUB_RUN_ID
+      - run: echo  - ${{ github.run_id }}    
+      - run: echo  - $GITHUB_RUN_NUMBER
+      - run: echo  - ${{ github.run_number }}    
+      - run: echo  - $GITHUB_SERVER_URL
+      - run: echo  - ${{ github.server_url }}    
+      - run: echo  - $GITHUB_SHA
+      - run: echo  - ${{ github.sha }}    
+      - run: echo  - $GITHUB_WORKFLOW
+      - run: echo  - ${{ github.workflow }}    
+      - run: echo  - $GITHUB_WORKSPACE
+      - run: echo  - ${{ github.workspace }}    
+      - run: echo  - $RUNNER_ARCH
+      - run: echo  - ${{ runner.arch }}    
+      - run: echo  - $RUNNER_NAME
+      - run: echo  - ${{ runner.name }}    
+      - run: echo  - $RUNNER_OS
+      - run: echo  - ${{ runner.os }}    
+      - run: echo  - $RUNNER_TEMP
+      - run: echo  - ${{ runner.temp }}    
+      - run: echo  - $RUNNER_TOOL_CACHE
+      - run: echo  - ${{ runner.tool_cache }}    
       
