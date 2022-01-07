@@ -43,8 +43,8 @@ jobs:
       - run: echo 32 - ${{ github.ref_type }}    
       - run: echo 33 - $GITHUB_REPOSITORY
       - run: echo 34 - ${{ github.repository }}    
-      - run: echo 35 - $GITHUB_REPOSITORY
-      - run: echo 36 - ${{ github.repository }}    
+      - run: echo 35 - $GITHUB_REPOSITORY_OWNER
+      - run: echo 36 - ${{ github.repository_owner }}    
       - run: echo 37 - $GITHUB_RUN_ID
       - run: echo 38 - ${{ github.run_id }}    
       - run: echo 39 - $GITHUB_RUN_NUMBER
