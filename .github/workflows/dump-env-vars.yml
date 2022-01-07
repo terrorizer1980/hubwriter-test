@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo 1 - $CI
-      - run: echo 2 - ${{ ci }}      
+      - run: echo 2 - no context      
       - run: echo 3 - $GITHUB_ACTION
       - run: echo 4 - ${{ github.action }}    
       - run: echo 5 - $GITHUB_ACTIONS
