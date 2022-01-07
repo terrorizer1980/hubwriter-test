@@ -53,8 +53,10 @@ jobs:
       - run: echo 40b - ${{ github.run_attempt }}    
       - run: echo 41 - $GITHUB_SERVER_URL
       - run: echo 42 - ${{ github.server_url }}    
-      - run: echo 43 - $GITHUB_SHA
-      - run: echo 44 - ${{ github.sha }}    
+      - run: echo 43a - $GITHUB_SHA
+      - run: echo 44a - ${{ github.sha }}    
+      - run: echo 43b - $GITHUB_TOKEN
+      - run: echo 44b - ${{ github.token }}   
       - run: echo 45 - $GITHUB_WORKFLOW
       - run: echo 46 - ${{ github.workflow }}    
       - run: echo 47 - $GITHUB_WORKSPACE
