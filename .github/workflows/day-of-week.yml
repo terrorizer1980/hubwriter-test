@@ -19,13 +19,13 @@ jobs:
           FIRST_NAME: Adam
           Last_Name: Spruce
       - name: "Hello world when it's Monday"
-        if: ${{ env.DAY_OF_WEEK }} == 'Mon' 
+        if: $FIRST_NAME == 'MonaStep' 
         run: echo "Hello there $env:FIRST_NAME $env:middle_name $env:Last_Name, today is Monday!"
         env:
-          FIRST_NAME: Mona
+          FIRST_NAME: MonaStep
           Last_Name: Octocat
       - name: else
-        if: ${{env.DAY_OF_WEEK}} != 'Mon' 
+        if: $FIRST_NAME != 'MonaStep' 
         run: echo "Hello $env:FIRST_NAME $env:middle_name $env:Last_Name. It's not Monday, it's $env:DAY_OF_WEEK!"
 
   show-env-vars:
