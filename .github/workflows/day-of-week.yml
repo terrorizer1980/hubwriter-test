@@ -3,7 +3,7 @@ name: Day of week greeting
 on:
   workflow_dispatch
 env:
-  DAY_OF_WEEK: Thurs
+  DAY_OF_WEEK: Mon
 
 jobs:
   weekday_job:
@@ -19,7 +19,7 @@ jobs:
           FIRST_NAME: Adam
           Last_Name: Spruce
       - name: "Hello world when it's Monday"
-        if: ${{ env.DAY_OF_WEEK == 'Mon' }}
+        if: env.DAY_OF_WEEK == 'Mon'
         run: echo "Hello $FIRST_NAME $middle_name $Last_Name, today is Monday!"
         env:
           FIRST_NAME: Mona
