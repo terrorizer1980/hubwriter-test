@@ -3,7 +3,7 @@ name: Day of week greeting
 on:
   workflow_dispatch
 env:
-  DAY_OF_WEEK: Mon
+  DAY_OF_WEEK: Tues
 
 jobs:
   weekday_job:
@@ -25,7 +25,7 @@ jobs:
           FIRST_NAME: Mona
           Last_Name: Octocat
       - name: else
-        if: ${{ env.DAY_OF_WEEK != 'Mon' }}
+        if: ${{env.DAY_OF_WEEK}} != 'Mon' 
         run: echo "Hello $env:FIRST_NAME $env:middle_name $env:Last_Name. It's not Monday!"
 
   show-env-vars:
