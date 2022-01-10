@@ -19,14 +19,14 @@ jobs:
           FIRST_NAME: Adam
           Last_Name: Spruce
       - name: "Hello world when it's Monday"
-        if: ${{ env.DAY_OF_WEEK }} == 'Mon'
+        if: ${{ env.DAY_OF_WEEK == 'Mon' }}
         run: echo "Hello there $env:FIRST_NAME $env:middle_name $env:Last_Name, today is Monday!"
         env:
           FIRST_NAME: Mona
           Last_Name: Octocat
       - name: else
         if: ${{env.DAY_OF_WEEK}} != 'Mon' 
-        run: echo "Hello $env:FIRST_NAME $env:middle_name $env:Last_Name. It's not Monday!"
+        run: echo "Hello $env:FIRST_NAME $env:middle_name $env:Last_Name. It's not Monday, it's $DAY_OF_WEEK!"
 
   show-env-vars:
       runs-on: windows-latest
