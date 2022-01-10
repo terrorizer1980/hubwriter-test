@@ -19,8 +19,10 @@ jobs:
       - run: echo 10 - ${{ github.actor }}    
       - run: echo 11 - $GITHUB_API_URL
       - run: echo 12 - ${{ github.api_url }}    
-      - run: echo 13 - $GITHUB_BASE_REF
-      - run: echo 14 - ${{ github.base_ref }}    
+      - run: echo 13a - $GITHUB_BASE_REF
+      - run: echo 14a - ${{ github.base_ref }} 
+      - run: echo 13b - $GITHUB_ENV
+      - run: echo 14b - ${{ github.env }}    
       - run: echo 15a - $GITHUB_EVENT
       - run: echo 16b - ${{ github.event }}    
       - run: echo 15b - $GITHUB_EVENT_NAME
