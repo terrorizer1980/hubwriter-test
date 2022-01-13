@@ -12,11 +12,11 @@ jobs:
         uses: hubwriter/hello-world-javascript-action@v1.1
         with:
           who-to-greet: 'Toffee Nose Apple'
+        run: echo "The action path was  ${{ github.action_path }}"
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
-      - name: Log actions info
-        run: echo "The action path was  ${{ github.action_path }}"
+     
         
         
        
