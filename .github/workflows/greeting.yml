@@ -1,10 +1,11 @@
 name: Greeting on variable day
 
 on:
+  pull_request
   workflow_dispatch
 
 env:
-  DAY_OF_WEEK: Tuesday
+  DAY_OF_WEEK: Monday
 
 jobs:
   greeting_job:
@@ -17,3 +18,4 @@ jobs:
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
         env:
           First_Name: Mona
+      - run: echo "head is $GITHUB_HEAD_REF - base is $GITHUB_BASE_REF"
