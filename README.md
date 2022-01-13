@@ -9,7 +9,7 @@ Rough.js works with both [Canvas](https://developer.mozilla.org/en-US/docs/Web/A
 
 [@RoughLib](https://twitter.com/RoughLib) on Twitter.
 
-## Install
+## Installation
 
 The latest Rough.js can be downloaded from the [dist folder](https://github.com/pshihn/rough/tree/master/dist).
 
