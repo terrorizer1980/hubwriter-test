@@ -9,8 +9,8 @@ jobs:
   weekday_job:
     runs-on: windows-latest
     env:
-      FIRST_NAME: Mona
-      middle_name: The
+      FIRST_NAME: Mona the Octocat
+      middle_name: It's open source!
 
     steps:
       - name: "Redefine first name to Adam"
