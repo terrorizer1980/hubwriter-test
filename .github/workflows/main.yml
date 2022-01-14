@@ -21,6 +21,6 @@ jobs:
         run: |
           echo "Is my face $action_state ?" # Will this output 'yellow'?
       - name: Use the value a third time
-        id: step_two
+        id: step_four
         run: |
           echo "And it was all ${{ env.action_state }}!" # This will output 'yellow'
