@@ -10,7 +10,7 @@ jobs:
     runs-on: windows-latest
     env:
       FIRST_NAME: Mona the Octocat
-      middle_name: ${{ It's open source! }}
+      middle_name: It's open source!
 
     steps:
       - name: "Redefine first name to Adam"
