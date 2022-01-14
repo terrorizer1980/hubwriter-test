@@ -1,8 +1,8 @@
 name: Greeting on variable day
 
 on:
-  pull_request
-  workflow_dispatch
+  pull_request:
+  workflow_dispatch:
 
 env:
   DAY_OF_WEEK: Monday
