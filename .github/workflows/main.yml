@@ -1,0 +1,26 @@
+name: Passing value to the next step
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set the value
+        id: step_one
+        run: |
+          echo "action_state=yellow" >> $GITHUB_ENV
+      - name: Use the value
+        id: step_two
+        run: |
+          echo "My favourite colour is ${{ env.action_state }}" # This will output 'yellow'
+      - name: Use the value again?
+        id: step_three
+        run: |
+          echo "Is my face $action_state ?" # Will this output 'yellow'?
+      - name: Use the value a third time
+        id: step_two
+        run: |
+          echo "And it was all ${{ env.action_state }}!" # This will output 'yellow'
